@@ -23,6 +23,5 @@ docker-run:
 		--tty \
 		--cpus 2 \
 		--memory 1GB \
-		--user "$$(id -u):$$(id -g)"
 		--publish "0.0.0.0:8080:8080/tcp" \
 		$(DOCKER_NAME):$(DOCKER_TAG)
